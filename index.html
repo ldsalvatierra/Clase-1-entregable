@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Vegano | Inicio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body id="inicio">
+    <header>
+        <h1>Inicio</h1>
+        <figure>
+            <a href="#">
+                <img src="./assets/logo-vegano.png" alt="Logo de comida vegana" title="logo" class="logo-vegano">
+            </a>
+            
+        </figure>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/menu.html">Menu</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/reservas.html">Reservas</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="display-flex">
+        <section class="caja-entera">   
+            <h2>Platillos destacados</h2>
+            <article class="tarjeta 1">
+                <p>Tenemos nuestra hamburguesa veggie, que se destaca por su excelente sabor, ingredientes frescos y una combinación irresistible.</p>
+                <figure>
+                    <img src="./assets/hamburguesa-veggie.webp" alt="Hamburguesa vegana con queso vegano, lechuga, tomate y papas rústicas" title="hamburguesa vegana" class="imagen">
+                    <figcaption>
+                        Hamburguesa de medallón vegetal con queso vegano, lechuga, tomate y papas rústicas.
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="tarjeta 2">
+                <p>Tenemos nuestra pizza vegana, que se destaca por su excelente sabor, ingredientes frescos y una combinación de sabores irresistibles.</p>
+                <figure>
+                    <img src="./assets/pizza-vegana.webp" alt="Pizza vegana" title="Pizza vegana" class="imagen">
+                    <figcaption>
+                        Pizza artesanal con mozzarella vegana, tomates cherry, aceitunas negras y albahaca fresca.
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="tarjeta 3">
+                <p>Tenemos nuestra ensalada tropical, que se destaca por su frescura, excelente sabor y una combinación de ingredientes que te transportará a un paraíso tropical.</p>
+                <figure>
+                    <img src="./assets/ensalada-tropical.webp" alt="Ensalada Vegana" title="Ensalada Tropical" class="imagen">
+                    <figcaption>
+                        Mezcla de hojas verdes, mango, palta, nueces y aderezo cítrico de la casa.
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <h2>Datos de Contacto</h2>
+        <section class="contacto">
+            <figure class="figurita">
+                <a href="https://facebook.com" >
+                    <img src="./assets/facebook.png" alt="Logo de facebook" class="rrss">
+                </a>
+            </figure>
+            <figure class="figurita">
+                <a href="https://instagram.com">
+                    <img src="./assets/instagram.png" alt="Logo de instagram" class="rrss">
+                </a>
+            </figure>
+            <figure class="figurita ">
+                <a href="https://wa.me/1123232323">
+                    <img src="./assets/whatsapp.png" alt="Logo de Whatsapp" class="rrss">
+                </a>
+            </figure>
+            <p class="pie-de-pagina">&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        </section>
+        <a href="#inicio" class="subir" >↑</a>
+    </footer>
+    <script> document.getElementById('year').textContent = new Date().getFullYear(); </script> 
+</body>
+</html>

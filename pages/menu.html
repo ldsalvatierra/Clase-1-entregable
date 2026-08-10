@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Vegano | Menú</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body id="inicio">
+    <header>
+        <h1>Menú</h1>
+        <figure>
+            <a href="../index.html">
+                <img src="../assets/logo-vegano.png" alt="Logo de comida vegana" title="logo" class="logo-vegano">
+            </a>
+        </figure>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./reservas.html">Reservas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main >
+        <section class="caja-entera">
+            <h2>Entradas</h2>
+            <article class="tarjeta 1">
+                <h3>Bruschettas Veganas</h3>
+                <figure >
+                    <img src="../assets/bruscheta-vegana.webp" alt="bruscheta vegana" class="imagen">
+                </figure>
+                <p>Pan artesanal con tomate, albahaca y aceite de oliva.</p>
+                <p class="precio">$12.500</p>
+            </article>
+            <article class="tarjeta 2">
+                <h3>Hummus con Pan Pita</h3>
+                <figure >
+                    <img src="../assets/Hummus.webp" alt="Hummus" class="imagen">
+                </figure>
+                <p>Hummus casero acompañado de pan pita tostado.</p>
+                <p class="precio">$15.200</p>
+            </article>
+        </section>
+        <section class="caja-entera">
+            <h2>Platos Principales</h2>
+            <article class="tarjeta 3">
+                <h3>Hamburguesa Veggie</h3>
+                <figure>
+                    <img src="../assets/hamburguesa-veggie.webp" alt="Hamburguesa Vegana" class="imagen">
+                </figure>
+                <p>Medallón vegetal, queso vegano, lechuga, tomate y papas.</p>
+                <p class="precio">$15.900</p>
+            </article>
+            <article class="tarjeta 4">
+                <h3>Pizza Vegana</h3>
+                <figure>
+                    <img src="../assets/pizza-vegana.webp" alt="pizza vegana" class="imagen">
+                </figure>
+                    <p>Mozzarella vegana, tomates cherry y albahaca.</p>
+                    <p class="precio">$18.500</p>
+            </article>
+        </section>
+        <section class="caja-entera">
+            <article class="tarjeta 5">
+                <h3>Cheesecake Vegan</h3>
+                <figure>
+                    <img src="../assets/vegan-cheesecake.webp" alt="Cheseecake Vegano" class="imagen">
+                </figure>
+                <p>Con frutos rojos y base de galletas.</p>
+                <p class="precio">$7.500</p>
+            </article>
+        </section>
+        <section class="caja-entera">
+            <h2>Bebidas</h2>
+            <article class="tarjeta 6">
+                <h3>Limonada Natural</h3>
+                <figure>
+                    <img src="../assets/limonada.webp" alt="Vaso de limonada" class="imagen">
+                </figure>
+                <p>Con menta y jengibre.</p>
+                <p class="precio">$4.500</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2>Datos de Contacto</h2>
+        <section>
+            <figure>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../assets/facebook.png" alt="Logo de facebook" class="rrss">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/instagram.png" alt="Logo de instagram" class="rrss">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://wa.me/1123232323" target="_blank">
+                    <img src="../assets/whatsapp.png" alt="Logo de Whatsapp" class="rrss">
+                </a>
+            </figure>
+            <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        </section>
+        <a href="#inicio" class="subir" >↑</a>
+    </footer>
+    <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>   
+</body>
+</html>

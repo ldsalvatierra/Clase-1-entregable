@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Vegano | Reservas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body id="inicio">
+    <header>
+        <h1>Reservas</h1>
+        <figure>
+            <a href="../index.html">
+                <img src="../assets/logo-vegano.png" alt="Logo de comida vegana" title="logo" class="logo-vegano">
+            </a>
+        </figure>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h2>Reserva Tu mesa</h2>
+        <p>Disfrutá de una experiencia gastronómica única. Completá el formulario y reservá tu mesa en Restaurante Vegano</p>
+        <section>
+            <p>Completa el Formulario para reservar tu mesa y disfrutar de nuestra propuesta gastronomica</p>
+        <form>
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="personas">Cantidad de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="10" required>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+
+            <button type="submit">Confirmar reserva</button>
+    </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Datos de Contacto</h2>
+        <section>
+            <figure>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../assets/facebook.png" alt="Logo de facebook">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/instagram.png" alt="Logo de instagram">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://wa.me/1123232323" target="_blank">
+                    <img src="../assets/whatsapp.png" alt="Logo de Whatsapp">
+                </a>
+            </figure>
+            <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        </section>
+        <a href="#inicio" class="subir" >↑</a>
+    </footer>
+    <script> document.getElementById('year').textContent = new Date().getFullYear(); </script> 
+</body>
+</html>
