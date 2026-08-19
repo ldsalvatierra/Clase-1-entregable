@@ -25,28 +25,30 @@
             </nav>
     </header>
     <main >
-        <section class="caja-entera">
+        <section class="menu-seccion">
             <h2>Entradas</h2>
-            <article class="tarjeta 1">
-                <h3>Bruschettas Veganas</h3>
-                <figure >
-                    <img src="../assets/bruscheta-vegana.webp" alt="bruscheta vegana" class="imagen">
-                </figure>
-                <p>Pan artesanal con tomate, albahaca y aceite de oliva.</p>
-                <p class="precio">$12.500</p>
-            </article>
-            <article class="tarjeta 2">
-                <h3>Hummus con Pan Pita</h3>
-                <figure >
-                    <img src="../assets/Hummus.webp" alt="Hummus" class="imagen">
-                </figure>
-                <p>Hummus casero acompañado de pan pita tostado.</p>
-                <p class="precio">$15.200</p>
-            </article>
+            <div class="menu-grid">
+                <article class="tarjeta tarjeta-menu">
+                    <h3>Bruschettas Veganas</h3>
+                    <figure >
+                        <img src="../assets/bruscheta-vegana.webp" alt="bruscheta vegana" class="imagen">
+                    </figure>
+                    <p>Pan artesanal con tomate, albahaca y aceite de oliva.</p>
+                    <p class="precio">$12.500</p>
+                </article>
+                <article class="tarjeta tarjeta-menu">
+                    <h3>Hummus con Pan Pita</h3>
+                    <figure >
+                        <img src="../assets/Hummus.webp" alt="Hummus" class="imagen">
+                    </figure>
+                    <p>Hummus casero acompañado de pan pita tostado.</p>
+                    <p class="precio">$15.200</p>
+                </article>
+            </div>
         </section>
         <section class="caja-entera">
             <h2>Platos Principales</h2>
-            <article class="tarjeta 3">
+            <article class="tarjeta tarjeta-menu">
                 <h3>Hamburguesa Veggie</h3>
                 <figure>
                     <img src="../assets/hamburguesa-veggie.webp" alt="Hamburguesa Vegana" class="imagen">
@@ -54,7 +56,7 @@
                 <p>Medallón vegetal, queso vegano, lechuga, tomate y papas.</p>
                 <p class="precio">$15.900</p>
             </article>
-            <article class="tarjeta 4">
+            <article class="tarjeta tarjeta-menu">
                 <h3>Pizza Vegana</h3>
                 <figure>
                     <img src="../assets/pizza-vegana.webp" alt="pizza vegana" class="imagen">
@@ -64,7 +66,8 @@
             </article>
         </section>
         <section class="caja-entera">
-            <article class="tarjeta 5">
+            <h2>Postres</h2>
+            <article class="tarjeta tarjeta-menu">
                 <h3>Cheesecake Vegan</h3>
                 <figure>
                     <img src="../assets/vegan-cheesecake.webp" alt="Cheseecake Vegano" class="imagen">
@@ -75,7 +78,7 @@
         </section>
         <section class="caja-entera">
             <h2>Bebidas</h2>
-            <article class="tarjeta 6">
+            <article class="tarjeta tarjeta-menu">
                 <h3>Limonada Natural</h3>
                 <figure>
                     <img src="../assets/limonada.webp" alt="Vaso de limonada" class="imagen">
@@ -85,28 +88,28 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="pie-de-pagina">
         <h2>Datos de Contacto</h2>
-        <section>
-            <figure>
-                <a href="https://www.facebook.com" target="_blank">
+        <section class="contacto">
+            <figure class="figurita">
+                <a href="https://facebook.com" target="_blank">
                     <img src="../assets/facebook.png" alt="Logo de facebook" class="rrss">
                 </a>
             </figure>
-            <figure>
-                <a href="https://www.instagram.com" target="_blank">
+            <figure class="figurita">
+                <a href="https://instagram.com" target="_blank">
                     <img src="../assets/instagram.png" alt="Logo de instagram" class="rrss">
                 </a>
             </figure>
-            <figure>
+            <figure class="figurita ">
                 <a href="https://wa.me/1123232323" target="_blank">
                     <img src="../assets/whatsapp.png" alt="Logo de Whatsapp" class="rrss">
                 </a>
             </figure>
-            <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+            <p class="pie-de-pagina">&copy;<span id="year"></span> Todos los Derechos Reservados</p>
         </section>
         <a href="#inicio" class="subir" >↑</a>
     </footer>
-    <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>   
+    <script> document.getElementById('year').textContent = new Date().getFullYear(); </script> 
 </body>
 </html>
